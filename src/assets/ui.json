@@ -1,0 +1,125 @@
+{
+	"textures": [
+		{
+			"image": "ui.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 540,
+				"h": 773
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Inventory.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 538,
+						"h": 728
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 538,
+						"h": 727
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 538,
+						"h": 727
+					}
+				},
+				{
+					"filename": "InventorySlot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 42,
+						"h": 42
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 42,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 730,
+						"w": 42,
+						"h": 42
+					}
+				},
+				{
+					"filename": "InventorySlot_Hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 42,
+						"h": 42
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 42,
+						"h": 42
+					},
+					"frame": {
+						"x": 45,
+						"y": 730,
+						"w": 42,
+						"h": 42
+					}
+				},
+				{
+					"filename": "FilterGridSlot.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 21
+					},
+					"frame": {
+						"x": 89,
+						"y": 730,
+						"w": 21,
+						"h": 21
+					}
+				},
+				{
+					"filename": "FilterGridSlot_Hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 21
+					},
+					"frame": {
+						"x": 112,
+						"y": 730,
+						"w": 21,
+						"h": 21
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:12706376d2b49259656c4772c767b92a:c407d9ee0aeadb8396b91dd14cff12f4:5b04aa198265472a3c5f56958d78e97b$"
+	}
+}

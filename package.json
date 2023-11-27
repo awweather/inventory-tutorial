@@ -1,0 +1,21 @@
+{
+  "name": "inventory-system-phaser",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "ecsy": "^0.4.2",
+    "phaser": "^3.60.0",
+    "phaser3-rex-plugins": "^1.60.7",
+    "uuidv4": "^6.2.13"
+  }
+}

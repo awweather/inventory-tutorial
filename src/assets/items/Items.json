@@ -1,0 +1,314 @@
+{
+	"textures": [
+		{
+			"image": "Items.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 165,
+				"h": 64
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Shield.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 30,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 0,
+						"w": 23,
+						"h": 31
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 23,
+						"h": 31
+					}
+				},
+				{
+					"filename": "EmeraldPendant.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 29
+					},
+					"frame": {
+						"x": 1,
+						"y": 34,
+						"w": 21,
+						"h": 29
+					}
+				},
+				{
+					"filename": "FullPlate.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 29,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 29,
+						"h": 28
+					},
+					"frame": {
+						"x": 24,
+						"y": 34,
+						"w": 29,
+						"h": 28
+					}
+				},
+				{
+					"filename": "GreatSword.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 30
+					},
+					"frame": {
+						"x": 26,
+						"y": 1,
+						"w": 30,
+						"h": 30
+					}
+				},
+				{
+					"filename": "SkullPendant.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 30
+					},
+					"frame": {
+						"x": 55,
+						"y": 33,
+						"w": 25,
+						"h": 30
+					}
+				},
+				{
+					"filename": "LargePotion.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 30
+					},
+					"frame": {
+						"x": 58,
+						"y": 1,
+						"w": 22,
+						"h": 30
+					}
+				},
+				{
+					"filename": "Reaver.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 30
+					},
+					"frame": {
+						"x": 82,
+						"y": 1,
+						"w": 17,
+						"h": 30
+					}
+				},
+				{
+					"filename": "MediumPotion.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 30
+					},
+					"frame": {
+						"x": 82,
+						"y": 33,
+						"w": 15,
+						"h": 30
+					}
+				},
+				{
+					"filename": "GoldPouch.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 26
+					},
+					"frame": {
+						"x": 99,
+						"y": 33,
+						"w": 27,
+						"h": 26
+					}
+				},
+				{
+					"filename": "Boots.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 26
+					},
+					"frame": {
+						"x": 101,
+						"y": 1,
+						"w": 22,
+						"h": 26
+					}
+				},
+				{
+					"filename": "Axe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 20
+					},
+					"frame": {
+						"x": 125,
+						"y": 1,
+						"w": 24,
+						"h": 20
+					}
+				},
+				{
+					"filename": "Dagger.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 128,
+						"y": 23,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "Crossbow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 18
+					},
+					"frame": {
+						"x": 128,
+						"y": 45,
+						"w": 24,
+						"h": 18
+					}
+				},
+				{
+					"filename": "RubyRing.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 17
+					},
+					"frame": {
+						"x": 150,
+						"y": 23,
+						"w": 14,
+						"h": 17
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:81331ba2d2de89611e419f82d4929d84:43ee969b8751c22304208bc9e352e06c:e6844a27e364e41b6ff4e09f3909db66$"
+	}
+}
