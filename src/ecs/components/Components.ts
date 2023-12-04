@@ -2,17 +2,18 @@ import Armor from "./Armor.ts";
 import Consumable from "./Consumable.ts";
 import Descriptor from "./Descriptor.ts";
 import EntityId from "./EntityId.ts";
+import Inventory from "./Inventory.ts";
 import PickedUp from "./PickedUp.ts";
 import Quantity from "./Quantity.ts";
 import Renderable from "./Renderable.ts";
 import Valuable from "./Valuable.ts";
 import Weapon from "./Weapon.ts";
-
 export {
   Armor,
   Consumable,
   Descriptor,
   EntityId,
+  Inventory,
   PickedUp,
   Quantity,
   Renderable,
@@ -30,6 +31,7 @@ export const components: ComponentTypes = {
   Renderable,
   Valuable,
   Weapon,
+  Inventory,
 };
 
 export type ComponentTypes = {
@@ -42,4 +44,5 @@ export type ComponentTypes = {
   Renderable: typeof Renderable;
   Valuable: typeof Valuable;
   Weapon: typeof Weapon;
+  Inventory: typeof Inventory;
 };

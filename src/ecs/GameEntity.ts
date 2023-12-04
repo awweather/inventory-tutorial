@@ -4,6 +4,7 @@ import {
   Consumable,
   Descriptor,
   EntityId,
+  Inventory,
   PickedUp,
   Quantity,
   Renderable,
@@ -23,6 +24,14 @@ export class GameEntity extends _Entity {
 
   get pickedUp(): PickedUp {
     const component = this.getComponent<PickedUp>(PickedUp);
+    if (!component) {
+      throw new Error("PickedUp does not exist on this entity.");
+    }
+    return component;
+  }
+
+  get pickedUp_mutable(): PickedUp {
+    const component = this.getMutableComponent<PickedUp>(PickedUp);
     if (!component) {
       throw new Error("PickedUp does not exist on this entity.");
     }
@@ -81,6 +90,14 @@ export class GameEntity extends _Entity {
     const component = this.getComponent<Consumable>(Consumable);
     if (!component) {
       throw new Error("Consumable does not exist on this entity.");
+    }
+    return component;
+  }
+
+  get inventory_mutable(): Inventory {
+    const component = this.getMutableComponent<Inventory>(Inventory);
+    if (!component) {
+      throw new Error("Inventory does not exist on this entity.");
     }
     return component;
   }
