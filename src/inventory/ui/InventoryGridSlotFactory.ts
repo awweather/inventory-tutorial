@@ -1,6 +1,11 @@
 import OverlapSizer from "phaser3-rex-plugins/templates/ui/overlapsizer/OverlapSizer";
 import { InventoryGridContext } from "../../InventoryGridContext.ts";
 import MainScene from "../../scenes/MainScene.ts";
+import InventoryGridSlotDragManager from "../managers/InventoryDragManager.ts";
+import InventoryGridSlotItemManager from "../managers/InventoryGridSlotItemManager.ts";
+import InvetoryItemTooltipManager from "../managers/InventoryItemTooltipManager.ts";
+import InventoryPointerEventManager from "../managers/InventoryPointerEventManager.ts";
+import { getValidDropTarget } from "../utils/Utils.ts";
 import InventoryGridSlot from "./InventoryGridSlot.ts";
 
 export default class InventoryGridSlotFactory {
@@ -19,9 +24,12 @@ export default class InventoryGridSlotFactory {
         InventoryGridContext.inventory
       );
 
-      //   slot.registerManagers(
-      //     new InventoryGridSlotPointerEventManager(scene, slot)
-      //   );
+      slot.registerManagers(
+        new InventoryPointerEventManager(scene, slot),
+        new InventoryGridSlotItemManager(scene, slot),
+        new InventoryGridSlotDragManager(scene, slot, getValidDropTarget),
+        new InvetoryItemTooltipManager(scene, slot)
+      );
 
       slots.push(slot);
     }

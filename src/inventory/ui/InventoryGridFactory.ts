@@ -1,4 +1,5 @@
 import MainScene from "../../scenes/MainScene.ts";
+import InventoryGridManager from "../managers/InventoryGridManager.ts";
 import InventoryGridSlotFactory from "./InventoryGridSlotFactory.ts";
 import InventoryGridSlotSpriteFactory from "./InventoryGridSlotSpriteFactory.ts";
 
@@ -48,6 +49,6 @@ export default class InventoryGridFactory {
       return slotA.slotIndex - slotB.slotIndex;
     });
 
-    return table;
+    return new InventoryGridManager(table, slots);
   }
 }

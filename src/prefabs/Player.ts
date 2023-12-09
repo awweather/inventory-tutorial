@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { GameEntity } from "../ecs/GameEntity.ts";
 import { initializeEntity } from "../ecs/InitializeEntity.ts";
+import { ItemKey, itemPresets } from "./Items.ts";
 
 const playerPreset = {
   inventory: {
@@ -112,6 +113,20 @@ const playerPreset = {
     name: "HeyThisiSDevByDusk!",
   },
 };
+
+export function getPlayerItems() {
+  const items = Object.keys(itemPresets);
+
+  return items.map((presetKey) => {
+    const base = itemPresets[presetKey as ItemKey];
+    const id = uuidv4();
+
+    return {
+      components: { ...base },
+      entityID: id,
+    };
+  });
+}
 
 export default function getPlayer(): GameEntity {
   const entityId = uuidv4();

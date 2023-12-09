@@ -1,5 +1,6 @@
 import MainScene from "../../scenes/MainScene.ts";
 import { centerVH } from "../../utils/Utils.ts";
+import InventoryWindowManager from "../managers/InventoryWindowManager.ts";
 import InventoryGridFactory from "./InventoryGridFactory.ts";
 
 export default class InventoryWindowFactory {
@@ -15,9 +16,9 @@ export default class InventoryWindowFactory {
 
     centerVH(inventoryWindow);
 
-    const inventoryGrid = InventoryGridFactory.create(scene);
+    const inventoryGridManager = InventoryGridFactory.create(scene);
 
-    inventoryWindow.add(inventoryGrid, {
+    inventoryWindow.add(inventoryGridManager.grid, {
       padding: {
         left: 15,
         right: 15,
@@ -27,5 +28,10 @@ export default class InventoryWindowFactory {
     });
 
     inventoryWindow.layout();
+
+    const inventoryWindowManager = new InventoryWindowManager(
+      scene,
+      inventoryGridManager
+    );
   }
 }

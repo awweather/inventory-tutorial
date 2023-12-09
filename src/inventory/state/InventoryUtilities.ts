@@ -31,7 +31,10 @@ export function moveItemToSlot(itemId: string, targetSlotIndex?: number) {
 
   const removedItemId = currentSlot!.removeItem();
 
-  const targetSlot = playerEntity.inventory_mutable.firstAvailableSlot();
+  const targetSlot =
+    targetSlotIndex !== undefined
+      ? playerEntity.inventory_mutable.slots[targetSlotIndex]
+      : playerEntity.inventory_mutable.firstAvailableSlot();
 
   targetSlot?.addItem(removedItemId);
   itemEntity.pickedUp_mutable.slotIndex = targetSlot!.slotIndex;

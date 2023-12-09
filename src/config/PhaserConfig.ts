@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 
+import DragPlugin from "phaser3-rex-plugins/plugins/drag-plugin";
 import RexUIPlugin from "phaser3-rex-plugins/templates/ui/ui-plugin.js";
 import MainScene from "../scenes/MainScene.ts";
 
@@ -17,6 +18,13 @@ export const config = {
   },
   scene: [MainScene],
   plugins: {
+    global: [
+      {
+        key: "dragPlugin",
+        plugin: DragPlugin,
+        start: true,
+      },
+    ],
     scene: [
       {
         key: "rexUI",
